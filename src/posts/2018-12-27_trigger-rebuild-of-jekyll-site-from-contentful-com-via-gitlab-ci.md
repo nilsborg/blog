@@ -1,5 +1,5 @@
 ---
-date: 2018-12-27T14:15:11.102Z
+date: 2017-11-05T14:15:11.102Z
 title: Trigger rebuild of Jekyll site from contentful.com via Gitlab CI
 ---
 Ok so if you’re like me currently, you're riding the static site generator train 🚂 and came to the part of the story, where the hero has to connect a CMS to the static site after all.
