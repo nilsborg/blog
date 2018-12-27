@@ -1,5 +1,5 @@
 ---
-date: 2017-11-05T14:15:53.227Z
+date: 2018-02-25T23:00:00.000Z
 title: Selfhosted Gitlab
 ---
 So since I've been using Gitlab.com for a while now, I actually started dreaming of running my own Gitlab server.
