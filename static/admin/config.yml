@@ -1,6 +1,6 @@
 backend:
   name: gitlab
-  owner: nils/blog-cms
+  repo: nils/blog-cms
   auth_type: implicit
   app_id: b35f57c1debcd0d5d4eaedae04c8cfa351d5ad95b48db2d6c663544876db76ed
   api_root: https://gitlab.strandrover.com/api/v4
