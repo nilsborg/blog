@@ -1,6 +1,10 @@
 ---
-date: 2017-10-04T13:12:17.005Z
 title: Using Gitlab CI for non-devops people
+date: 2017-10-04T13:12:17.005Z
+tags:
+  - woot
+  - blabla
+  - aha
 ---
 So we work a ton with Jekyll and headless CMS things lately. And that's all brilliant and everythings because you know – the usual things:
 
