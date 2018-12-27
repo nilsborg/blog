@@ -15,8 +15,8 @@ collections:
     label: Post
     folder: src/posts
     create: true
+    slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
     fields:
-      - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
