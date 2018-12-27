@@ -1,6 +1,10 @@
 ---
-date: 2018-08-25T22:00:00.000Z
 title: Gitlab CI and Netlify
+date: 2018-08-25T22:00:00.000Z
+tags:
+  - gitlab
+  - netlify
+  - CI
 ---
 **Update: Using new [netlify node cli](https://cli.netlify.com/) instead of binary package**
 
