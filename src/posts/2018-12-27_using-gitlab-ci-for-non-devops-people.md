@@ -35,7 +35,7 @@ We define two "stages": `build` and `deploy`.
 
 All that looks like this in the pipelines overview:
 
-![Pipeline Overview](/assets/images/2017/gitlab-ci.png)
+![Pipeline Overview](/assets/gitlab-ci.png)
 
 ### .gitlab-ci.yml
 
