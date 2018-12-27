@@ -1,6 +1,10 @@
 ---
-date: 2017-09-17T22:00:00.000Z
 title: Let's encrypt this blog
+date: 2017-09-17T22:00:00.000Z
+tags:
+  - security
+  - gitlab
+  - https
 ---
 ## Gitlab rulez!1
 
