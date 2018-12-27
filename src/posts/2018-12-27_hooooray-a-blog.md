@@ -1,6 +1,8 @@
 ---
-date: 2017-09-16T22:00:00.000Z
 title: Hooooray a blog!
+date: 2017-09-16T22:00:00.000Z
+tags:
+  - random
 ---
 It's Sunday. My wife just came out the shower while I bespaßt the son with various jankering around which - of course - I totally recorded on video.
 
