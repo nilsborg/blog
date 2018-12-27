@@ -11,7 +11,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: `slug`,
       value: slug,
     })
-    console.log(`slug: ${slug}`)
   }
 }
 
@@ -32,8 +31,6 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `).then(result => {
-      console.log(JSON.stringify(result, null, 2))
-
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
           path: node.fields.slug,
