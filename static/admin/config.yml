@@ -13,7 +13,7 @@ public_folder: assets
 collections:
   - name: post
     label: Post
-    folder: posts
+    folder: src/posts
     create: true
     fields:
       - { name: path, label: Path }
