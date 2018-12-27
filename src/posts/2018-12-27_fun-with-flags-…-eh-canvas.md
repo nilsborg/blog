@@ -1,6 +1,10 @@
 ---
-date: 2018-11-14T14:18:16.596Z
 title: Fun with Flags … eh. Canvas!
+date: 2018-11-14T14:18:16.596Z
+tags:
+  - javascript
+  - canvas
+  - learning
 ---
 So, this post is going to be one of so many Love Songs to Mister [Wes Bos](https://wesbos.com/). Wes apparently decided at some point of his existence as a brilliant web developer to make a living from sharing his wisdom. And I'm very happy he did!
 
