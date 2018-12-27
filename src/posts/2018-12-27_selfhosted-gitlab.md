@@ -1,6 +1,10 @@
 ---
-date: 2018-02-25T23:00:00.000Z
 title: Selfhosted Gitlab
+date: 2018-02-25T23:00:00.000Z
+tags:
+  - gitlab
+  - deployment
+  - jekyll
 ---
 So since I've been using Gitlab.com for a while now, I actually started dreaming of running my own Gitlab server.
 The hosted version is cool and all but I wanted control over where my data goes and also – I have to say – Gitlab.com tends to be down sometimes, which kinda bumms me out.
