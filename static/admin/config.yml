@@ -17,6 +17,7 @@ collections:
     create: true
     slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
     fields:
-      - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: date, label: Date, widget: date }
+      - { name: 'tags', label: 'Tags', widget: 'list', default: ['taaag'] }
       - { name: body, label: Body, widget: markdown }
