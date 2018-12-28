@@ -20,7 +20,7 @@ Though all this is great, I recently finished up a bigger job which kinda demons
 
 I started following [@gatsbyjs on Twitter](https://twitter.com/gatsbyjs) a couple months back and since then, the posts saying something like "I rebuilt my site in Gatsby and it's super awesome-sauce!" appeared more frequently. 
 
-During that time our tiny bureau grew a bit. With a little help from our friends kind of :)
+During that time our tiny bureau also grew a bit. With a little help from our friends so to say :)
 
 My new coding buddy Daniel wanted to check out Gatsby too, so we actually just turned the next website project into a Gatsby experiment. I'll definitely write something about that – but in another post. Which is gonna be great. Because the experient ended up introducting a lot more funky technologies that either of us expected.
 
