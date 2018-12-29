@@ -13,20 +13,20 @@ const Post = ({ data }) => {
     <Layout>
       <article
         className={style.post}
-        itemscope
-        itemtype="http://schema.org/BlogPosting"
+        itemScope
+        itemType="http://schema.org/BlogPosting"
       >
         <header className={style.header}>
           <Link to="/" className={style.goHome} alt="Go home!">
             <HomeIcon />
           </Link>
 
-          <h1 className={style.title} itemprop="name headline">
+          <h1 className={style.title} itemProp="name headline">
             {post.frontmatter.title}
           </h1>
 
           <aside className={style.meta}>
-            <time dateTime={post.frontmatter.date} itemprop="datePublished">
+            <time dateTime={post.frontmatter.date} itemProp="datePublished">
               {post.frontmatter.date}
             </time>
           </aside>
@@ -34,7 +34,7 @@ const Post = ({ data }) => {
 
         <div
           className={style.content}
-          itemprop="articleBody"
+          itemProp="articleBody"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
       </article>
