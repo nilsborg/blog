@@ -1,0 +1,21 @@
+@import '../assets/scss/vars';
+@import '../assets/scss/helper/flex-unit';
+
+.footer {
+  @include flex-unit(8vw, 20px, 150px, 20px, padding);
+  background-color: $dark;
+  color: $turqoise;
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  a {
+    color: $safron;
+
+    &:hover {
+      text-decoration: underline solid rgba($turqoise, 0.5);
+      text-decoration-skip: ink;
+    }
+  }
+}
