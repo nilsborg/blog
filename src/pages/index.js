@@ -4,6 +4,9 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Tags from '../components/tags'
+
+import style from './index.module.scss'
 
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
@@ -12,18 +15,23 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
-      <h1>Posts</h1>
+      <h1 className="page-heading">Posts</h1>
 
-      <ul>
-        {posts.map(({ node: { id, frontmatter, fields } }) => {
-          return (
-            <li key={id}>
-              <Link to={fields.slug}>{frontmatter.title}</Link>
-              <time>{frontmatter.date}</time>
-            </li>
-          )
-        })}
-      </ul>
+      {posts.map(({ node: { id, frontmatter, fields } }) => {
+        return (
+          <article key={id} className={style.post}>
+            <time dateTime={frontmatter.date} itemprop="datePublished">
+              {frontmatter.date}
+            </time>
+
+            <Link to={fields.slug}>
+              <h2>{frontmatter.title}</h2>
+            </Link>
+
+            <Tags tags={frontmatter.tags} />
+          </article>
+        )
+      })}
     </Layout>
   )
 }
@@ -36,7 +44,8 @@ export const pageQuery = graphql`
           id
           frontmatter {
             title
-            date(formatString: "DD.MM.YYYY")
+            date(formatString: "DD. MMMM YYYY")
+            tags
           }
           fields {
             slug

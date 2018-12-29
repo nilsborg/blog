@@ -1,0 +1,87 @@
+@import '../assets/scss/vars';
+@import '../assets/scss/helper/animations';
+@import '../assets/scss/helper/flex-unit';
+
+.header {
+  position: relative;
+}
+
+.title {
+  margin-top: 0;
+  @include flex-unit(5vw, 10px, 150px, 20px, margin-bottom);
+  @include flex-unit(5vw, 22px, 70px, 22px);
+}
+
+.goHome {
+  @media (max-width: 600px) {
+    display: none;
+  }
+
+  position: absolute;
+  @include flex-unit(-8vw, -20px, -150px, -20px, left);
+  cursor: pointer;
+  @include flex-unit(5vw, 22px, 70px, 22px, width);
+  display: block;
+
+  svg {
+    transition: stroke 0.5s, fill 0.5s, transform 0.6s;
+    width: 100%;
+    height: 100%;
+    stroke: $turqoise;
+    stroke-width: 2px;
+    fill: transparent;
+    transform-origin: center;
+  }
+
+  &:hover svg {
+    fill: darken($turqoise, 10%);
+    stroke: transparent;
+    transform: translateX(-20px) rotate(-90deg);
+  }
+}
+
+.content {
+  p,
+  ul,
+  ol {
+    max-width: 700px;
+    box-sizing: border-box;
+  }
+
+  blockquote {
+    @include flex-unit(3vw, 10px, 50px, 20px, padding);
+    font-family: Lucida Bright, Georgia, serif;
+    font-size: 0.85em;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 700px;
+    border-radius: 2px;
+    animation: float 5s ease-in-out alternate infinite;
+
+    @media (min-width: 600px) {
+      @include flex-unit(-3vw, -10px, -50px, -20px, margin-left);
+    }
+
+    p:first-child {
+      margin-top: 0;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // code BLOCKS
+  .highlight {
+    @include flex-unit(3vw, 14px, 16px, 14px);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  // code INLINE
+  .highlighter-rouge {
+    @include flex-unit(3vw, 14px, 16px, 14px);
+    word-wrap: break-word;
+    color: $dark;
+  }
+}

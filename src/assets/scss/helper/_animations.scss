@@ -1,0 +1,11 @@
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+    box-shadow: 0 1vh 2vw rgba($dark, 0.15);
+  }
+
+  100% {
+    transform: translate(0, -2vh);
+    box-shadow: 0 5vh 5vw rgba($dark, 0.06);
+  }
+}

@@ -1,0 +1,11 @@
+@import '../assets/scss/helper/flex-unit';
+
+.wrapper {
+  @media (min-width: 600px) {
+    padding-left: 10vw;
+  }
+}
+
+.main {
+  @include flex-unit(8vw, 20px, 150px, 20px, padding);
+}

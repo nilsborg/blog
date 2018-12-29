@@ -1,0 +1,12 @@
+@import '../assets/scss/vars';
+@import '../assets/scss/helper/flex-unit';
+
+.header {
+  @include flex-unit(8vw, 20px, 150px, 20px, padding-left);
+  @include flex-unit(8vw, 20px, 150px, 20px, padding-right);
+  padding-top: 5vw;
+
+  a {
+    color: $safron;
+  }
+}

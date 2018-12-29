@@ -1,6 +1,8 @@
-import { Link, StaticQuery } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
+
+import style from './header.module.scss'
 
 const Header = () => (
   <StaticQuery
@@ -14,12 +16,8 @@ const Header = () => (
       }
     `}
     render={data => (
-      <header>
-        <div>
-          <h1>
-            <Link to="/">{data.site.siteMetadata.title}</Link>
-          </h1>
-        </div>
+      <header className={style.header}>
+        <Link to="/">{data.site.siteMetadata.title}</Link>
       </header>
     )}
   />

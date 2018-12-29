@@ -1,0 +1,39 @@
+@import url('~normalize.css');
+@import 'vars';
+@import 'helper/animations';
+@import 'helper/flex-unit';
+
+body {
+  @include flex-unit(3vw, 14px, 22px, 13px);
+  line-height: 1.4;
+  font-family: Inconsolata, 'Andale Mono', Monaco, Consolas, monospace;
+  color: $dark;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: $turqoise;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline solid rgba($dark, 0.5);
+    text-decoration-skip: ink;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.page-heading {
+  margin-top: 0;
+}

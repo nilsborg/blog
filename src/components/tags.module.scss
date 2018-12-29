@@ -1,0 +1,13 @@
+@import '../assets/scss/vars';
+
+.tag {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.5vw 1vw;
+  line-height: 1;
+  background-color: $superlight;
+  color: $blue;
+  border-radius: 2px;
+  margin-right: 0.5em;
+}
