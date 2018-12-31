@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import PageTransition from 'gatsby-plugin-page-transitions'
 
 import Header from './header'
 import Footer from './footer'
@@ -10,7 +11,9 @@ import '../assets/scss/global.scss'
 const Layout = ({ children }) => (
   <div className={style.wrapper}>
     <Header />
-    <main className={style.main}>{children}</main>
+    <PageTransition transitionTime={5000}>
+      <main className={style.main}>{children}</main>
+    </PageTransition>
     <Footer />
   </div>
 )
