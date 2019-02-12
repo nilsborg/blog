@@ -58,6 +58,5 @@ module.exports = {
         },
       },
     },
-    'gatsby-plugin-page-transitions',
   ],
 }
