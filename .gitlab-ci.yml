@@ -5,7 +5,7 @@ build:
       - node_modules/
   script:
     - npm i
-    - npm build
+    - npm run build
   artifacts:
     paths:
       - public
